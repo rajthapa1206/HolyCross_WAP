@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>HolyCross</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+        </div>
+    </header>
+    <nav>
+        <div class="navbar">
+            <span>HolyCross Medical Center</span>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='patients.html'>Patients</a></li>
+            </ul>
+            <span class="right">Welcome, Guest</span>
+        </div>
+    </nav>
+    <form action="#" method="get">
+        <div class="main">
+            <h2>Patients Registration</h2>
+            <hr>
+            <div>
+                <label for="patientId">*Patient ID No:</label>
+            </div>
+            <div>
+                <input type="text" name="patientId" id="patientID" placeholder="EP-XXX-XXXXXX" pattern="EP-\d{3}-\d{6}" required/><br>
+                <span>Enter the Patient ID Number, in the specified format</span>
+            </div>
+            <div class="row">  
+                <div class="column firstName">
+                    <label for="firstName">*First Name:</label> <br>
+                    <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" required/><br>
+                    <span>Enter the Patient's First Name</span>
+                </div>
+                <div class="column middleName">
+                    <label for="middleName">Middle Initial(s):</label> <br>
+                    <input type="text" name="middleName" id="middleName" placeholder="Enter Middle Initial(s)" />
+                </div>
+                <div class="column lastName">
+                    <label for="lastName">*Last Name:</label> <br>
+                    <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" required/><br>
+                    <span>Enter the Patient's Last Name</span>
+                </div>
+            </div>
+            <div class="row">  
+                <div class="column dob">
+                    <label for="dob">*Date of birth:</label> <br>
+                    <input type="date" name="dob" id="dob" required/><br>
+                    <span>Enter the Patient's Date Of Birth</span>
+                </div>
+                <div class="column department">
+                    <label for="department">*Department</label> <br>
+                    <select name="department" id="department" required>
+                        <option value="" selected disabled hidden>Select...</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="ent">Ear, Nose and Throat</option>
+                        <option value="derma">Derma</option>
+                        <option value="dental">Dental</option>
+                        <option value="Ortho">Orthopedic</option>
+                    </select>
+                </div>
+                <div class="column outpatient">
+                    <label for="outpatient">*Is this an Out-patient?</label> <br>
+                    <label>
+                        <input type="radio" name="outpatient" id="out" required>True
+                    </label>
+                    <label>
+                        <input type="radio" name="outpatient" id="in" >False
+                    </label>
+                </div>
+            </div> 
+            <div class="btn-panel">
+                <button type="reset" name="resetBtn" id="resetBtn">Reset</button>
+                <button type="submit" name="submitBtn" id="submitBtn">Submit</button>
+            </div> 
+
+        </div>
+    </form>
+    <div class="patientsList">
+        <label for="elderly"><input type="checkbox" id="elderly">Show Elderly Patients only</label>
+        <label for="outpatient"><input type="checkbox" id="outpatient">Show Out-Patients only</label>
+        <table>
+            <thead>
+                <tr>
+                    <th>Patient ID No</th>
+                    <th>First Name</th>
+                    <th>Middle Initial(s)</th>
+                    <th>Last Name</th>
+                    <th>Date of birth</th>
+                    <th>Department</th>
+                    <th>Out-patient?</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <tr>
+                    <th>P-001-000001</th>
+                    <td>Ana</td>
+                    <td>J</td>
+                    <td>Smith</td>
+                    <td>1955-05-05</td>
+                    <td>Ear,Nose and Throat</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th>EP-001-000002</th>
+                    <td>Bob</td>
+                    <td>K</td>
+                    <td>Jones</td>
+                    <td>1955-05-04</td>
+                    <td>Cardiology</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    
+    </div>
+    <footer>
+        <div class="footer">
+            <span class="left">Raj Thapa:::CS472-WAP</span>
+            <span class="right">HCMC&copy;March 2022</span>
+        </div>
+    </footer>
+</body>
+</html>
