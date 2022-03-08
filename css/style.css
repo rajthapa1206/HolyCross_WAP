@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+}
+span.phone{
+    color: blue;
+}
+span.email{
+    color:orangered;
+}
+div.main {
+    max-width: 90%;
+    padding-left: 10%;
+}
+.navbar{
+    position: relative;
+    background-color: orangered;
+    height: 50px; 
+    color: white;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+.navbar span{
+    margin-left: 20px;
+}
+li{ 
+    padding-top: 10px;
+    display: inline-flex;  
+    border-left: 2px solid white;
+    width: 100px;
+}
+li a {
+    color: white;
+    padding-left: 31px;
+}
+.navbar span{
+    padding-left: 10px;
+}
+div.footer{
+    margin-top: 2.5%;
+    background-color: gainsboro;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+div img{
+    height: 350px;
+    width: 100%;
+}
+#leftmost {
+    display: block;
+    width: 75%;
+    min-width: 550px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+}
+.footer span.left{
+    padding-left: 10px;
+    position: bottom;
+    float: left;
+}
+span.right{
+    float: right;
+    padding-right:10px;
+}
